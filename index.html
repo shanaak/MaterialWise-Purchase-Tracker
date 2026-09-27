@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MaterialWise Purchase Tracker</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk1hdGVyaWFsIFB1cmNoYXNlIFRyYWNrZXIiLCAic2hvcnRfbmFtZSI6ICJNYXRlcmlhbCBQdXJjaGFzZSBUcmFja2VyIiwgInN0YXJ0X3VybCI6ICIuIiwgInNjb3BlIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI2VhZTdlMSIsICJ0aGVtZV9jb2xvciI6ICIjMWMzMTQwIiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0F4T1RJZ01Ua3lJajQ4Y21WamRDQjNhV1IwYUQwaU1Ua3lJaUJvWldsbmFIUTlJakU1TWlJZ2NuZzlJalF3SWlCbWFXeHNQU0lqTW1NMFlUVmxJaTgrUEhCaGRHZ2daRDBpVFRrMklETTBJRXd4TlRRZ05qZ2dUREUxTkNBeE16WWdURGsySURFM01DQk1NemdnTVRNMklFd3pPQ0EyT0NCYUlpQm1hV3hzUFNKdWIyNWxJaUJ6ZEhKdmEyVTlJaU5sTURoaE0yRWlJSE4wY205clpTMTNhV1IwYUQwaU9TSXZQanh3WVhSb0lHUTlJazA1TmlBek5DQk1PVFlnTVRBeUlFMHpPQ0EyT0NCTU9UWWdNVEF5SUV3eE5UUWdOamdpSUdacGJHdzlJbTV2Ym1VaUlITjBjbTlyWlQwaUkyVXdPR0V6WVNJZ2MzUnliMnRsTFhkcFpIUm9QU0k1SWk4K1BDOXpkbWMrQ2c9PSIsICJzaXplcyI6ICIxOTJ4MTkyIiwgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBeE9USWdNVGt5SWo0OGNtVmpkQ0IzYVdSMGFEMGlNVGt5SWlCb1pXbG5hSFE5SWpFNU1pSWdjbmc5SWpRd0lpQm1hV3hzUFNJak1tTTBZVFZsSWk4K1BIQmhkR2dnWkQwaVRUazJJRE0wSUV3eE5UUWdOamdnVERFMU5DQXhNellnVERrMklERTNNQ0JNTXpnZ01UTTJJRXd6T0NBMk9DQmFJaUJtYVd4c1BTSnViMjVsSWlCemRISnZhMlU5SWlObE1EaGhNMkVpSUhOMGNtOXJaUzEzYVdSMGFEMGlPU0l2UGp4d1lYUm9JR1E5SWswNU5pQXpOQ0JNT1RZZ01UQXlJRTB6T0NBMk9DQk1PVFlnTVRBeUlFd3hOVFFnTmpnaUlHWnBiR3c5SW01dmJtVWlJSE4wY205clpUMGlJMlV3T0dFellTSWdjM1J5YjJ0bExYZHBaSFJvUFNJNUlpOCtQQzl6ZG1jK0NnPT0iLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMmM0YTVlIi8+PHBhdGggZD0iTTk2IDM0IEwxNTQgNjggTDE1NCAxMzYgTDk2IDE3MCBMMzggMTM2IEwzOCA2OCBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNlMDhhM2EiIHN0cm9rZS13aWR0aD0iOSIvPjxwYXRoIGQ9Ik05NiAzNCBMOTYgMTAyIE0zOCA2OCBMOTYgMTAyIEwxNTQgNjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UwOGEzYSIgc3Ryb2tlLXdpZHRoPSI5Ii8+PC9zdmc+Cg==">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMmM0YTVlIi8+PHBhdGggZD0iTTk2IDM0IEwxNTQgNjggTDE1NCAxMzYgTDk2IDE3MCBMMzggMTM2IEwzOCA2OCBaIiBmaWxsPSJub25lIiBzdHJva2U9IiNlMDhhM2EiIHN0cm9rZS13aWR0aD0iOSIvPjxwYXRoIGQ9Ik05NiAzNCBMOTYgMTAyIE0zOCA2OCBMOTYgMTAyIEwxNTQgNjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UwOGEzYSIgc3Ryb2tlLXdpZHRoPSI5Ii8+PC9zdmc+Cg==">
+<meta name="theme-color" content="#1c3140">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MaterialWise Purchase Tracker">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+<style>
+:root{
+  --bg:#eae7e1; --panel:#ffffff; --ink:#232320; --ink-soft:#5c5952;
+  --steel:#2c4a5e; --steel-dark:#1c3140; --rust:#bf6a1f; --rust-soft:#f0dcc4;
+  --line:#d8d4cb; --good:#3f7a4f; --font-ui:'IBM Plex Sans',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b1a17; --panel:#25241f; --ink:#ece9e2; --ink-soft:#a6a196;
+    --steel:#7fa6c0; --steel-dark:#5c86a2; --rust:#e08a3a; --rust-soft:#3a2c1a; --line:#3a382f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1b1a17; --panel:#25241f; --ink:#ece9e2; --ink-soft:#a6a196;
+  --steel:#7fa6c0; --steel-dark:#5c86a2; --rust:#e08a3a; --rust-soft:#3a2c1a; --line:#3a382f;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px); height:100%;}
+body{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-ui);-webkit-font-smoothing:antialiased;}
+*{box-sizing:border-box;}
+header{position:sticky;top:0;z-index:10;background:var(--steel-dark);color:#f2efe8;padding:env(safe-area-inset-top,0px) 0 0;}
+.hd-inner{padding:14px 18px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.hd-title{font-weight:700;font-size:17px;letter-spacing:.2px;}
+.hd-sub{font-size:11px;color:#c7d3da;font-family:var(--font-mono);}
+.theme-btn{background:transparent;border:1px solid #ffffff33;color:#f2efe8;border-radius:7px;padding:6px 10px;font-size:12px;cursor:pointer;}
+nav{display:flex;gap:2px;overflow-x:auto;padding:0 12px;background:var(--steel-dark);border-top:1px solid #ffffff1a;}
+nav button{background:transparent;border:none;color:#cfd9de;padding:11px 14px;font-size:13.5px;font-weight:500;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;font-family:var(--font-ui);}
+nav button.active{color:#fff;border-bottom-color:var(--rust);}
+main{max-width:1100px;margin:0 auto;padding:18px 14px 60px;}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px;}
+.card h2{margin:0 0 14px;font-size:14px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-soft);font-weight:600;}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+.kpi .label{font-size:12px;color:var(--ink-soft);margin-bottom:6px;}
+.kpi .value{font-family:var(--font-mono);font-size:22px;font-weight:600;color:var(--steel);}
+.kpi.amt .value{color:var(--rust);}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+.field{display:flex;flex-direction:column;gap:4px;flex:1;min-width:120px;}
+.field label{font-size:11.5px;color:var(--ink-soft);}
+input,select{font-family:var(--font-ui);font-size:14px;padding:8px 9px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);width:100%;}
+button.btn{background:var(--steel);color:#fff;border:none;border-radius:7px;padding:9px 16px;font-size:13.5px;font-weight:600;cursor:pointer;font-family:var(--font-ui);}
+button.btn.rust{background:var(--rust);}
+button.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink);}
+button.btn:active{transform:scale(.98);}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{text-align:left;font-size:11px;text-transform:uppercase;color:var(--ink-soft);border-bottom:2px solid var(--line);padding:8px 6px;letter-spacing:.4px;}
+td{padding:8px 6px;border-bottom:1px solid var(--line);font-family:var(--font-mono);}
+td.txt{font-family:var(--font-ui);}
+.tbl-wrap{overflow-x:auto;}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12.5px;}
+.bar-name{width:110px;flex-shrink:0;color:var(--ink-soft);}
+.bar-track{flex:1;background:var(--rust-soft);border-radius:5px;height:16px;overflow:hidden;}
+.bar-fill{height:100%;background:var(--rust);}
+.bar-val{width:90px;text-align:right;font-family:var(--font-mono);flex-shrink:0;}
+.pill{display:inline-block;background:var(--rust-soft);color:var(--rust);border-radius:20px;padding:2px 9px;font-size:11px;font-family:var(--font-mono);}
+.empty{color:var(--ink-soft);font-size:13px;text-align:center;padding:30px 10px;}
+.dz{border:2px dashed var(--line);border-radius:10px;padding:26px 14px;text-align:center;cursor:pointer;color:var(--ink-soft);font-size:13px;}
+.dz:hover{border-color:var(--steel);}
+.dz strong{color:var(--steel);}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--steel-dark);color:#fff;padding:10px 18px;border-radius:8px;font-size:13px;z-index:50;opacity:0;transition:opacity .3s;pointer-events:none;}
+.toast.show{opacity:1;}
+.del{color:var(--rust);cursor:pointer;font-size:15px;background:none;border:none;}
+::-webkit-scrollbar{height:6px;width:6px;}
+::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hd-inner">
+    <div><div class="hd-title">Material Purchase Tracker</div><div class="hd-sub" id="rangeLabel">All records</div></div>
+    <button class="theme-btn" id="themeBtn">🌓</button>
+  </div>
+  <nav>
+    <button data-tab="dash" class="active">📊 Dashboard</button>
+    <button data-tab="entry">✏️ Data Entry</button>
+    <button data-tab="import">📥 Import Excel</button>
+    <button data-tab="reports">📦 Reports</button>
+    <button data-tab="export">⬇️ Export</button>
+  </nav>
+</header>
+<main>
+
+<section id="dash">
+  <div class="card">
+    <h2>Overview</h2>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="label">Total Purchases</div><div class="value" id="k-count">0</div></div>
+      <div class="kpi"><div class="label">Total Materials</div><div class="value" id="k-mat">0</div></div>
+      <div class="kpi"><div class="label">Total Suppliers</div><div class="value" id="k-sup">0</div></div>
+      <div class="kpi amt"><div class="label">Total Purchase Amount</div><div class="value" id="k-amt">Rs.0</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Material-wise Amount</h2>
+    <div id="matBars"><div class="empty">No data yet — add or import purchases.</div></div>
+  </div>
+  <div class="card">
+    <h2>Supplier-wise Amount</h2>
+    <div id="supBars"><div class="empty">No data yet.</div></div>
+  </div>
+  <div class="card">
+    <h2>Month-wise Purchases</h2>
+    <div id="monthBars"><div class="empty">No data yet.</div></div>
+  </div>
+</section>
+
+<section id="entry" style="display:none">
+  <div class="card">
+    <h2>Add Purchase Entry</h2>
+    <div class="row">
+      <div class="field"><label>Date</label><input type="date" id="f-date"></div>
+      <div class="field"><label>Material Code</label><input id="f-code" placeholder="MAT001"></div>
+      <div class="field"><label>Material Name</label><input id="f-name" placeholder="Cement"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>Supplier</label><input id="f-sup" placeholder="ABC Traders"></div>
+      <div class="field"><label>Invoice No</label><input id="f-inv" placeholder="INV001"></div>
+      <div class="field"><label>Unit</label><input id="f-unit" placeholder="Bag"></div>
+    </div>
+    <div class="row">
+      <div class="field"><label>Qty</label><input type="number" id="f-qty" placeholder="100"></div>
+      <div class="field"><label>Rate (Rs.)</label><input type="number" id="f-rate" placeholder="450"></div>
+      <div class="field"><label>Amount (auto)</label><input id="f-amt" disabled placeholder="Rs.0"></div>
+    </div>
+    <button class="btn rust" id="addBtn">+ Add Entry</button>
+  </div>
+  <div class="card">
+    <h2>All Entries (<span id="entryCount">0</span>)</h2>
+    <div class="tbl-wrap"><table id="entryTable"><thead><tr>
+      <th>Date</th><th>Code</th><th>Material</th><th>Supplier</th><th>Invoice</th><th>Qty</th><th>Unit</th><th>Rate</th><th>Amount</th><th></th>
+    </tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section id="import" style="display:none">
+  <div class="card">
+    <h2>Import Excel</h2>
+    <p style="font-size:13px;color:var(--ink-soft);margin-top:0">Expected columns: <b>Date, Material Code, Material Name, Supplier, Invoice No, Qty, Unit, Rate, Amount</b> (Amount is auto-calculated if left blank).</p>
+    <div class="dz" id="dz">📄 Click to choose an Excel file (.xlsx / .csv), or drag it here<br><strong>Tap to browse</strong></div>
+    <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" style="display:none">
+    <div id="importMsg" style="margin-top:10px;font-size:13px;color:var(--good)"></div>
+  </div>
+  <div class="card">
+    <h2>Download Blank Template</h2>
+    <button class="btn ghost" id="templateBtn">Download Excel Template</button>
+  </div>
+</section>
+
+<section id="reports" style="display:none">
+  <div class="card">
+    <h2>Filters</h2>
+    <div class="row">
+      <div class="field"><label>From Date</label><input type="date" id="ff-from"></div>
+      <div class="field"><label>To Date</label><input type="date" id="ff-to"></div>
+      <div class="field"><label>Material</label><select id="ff-mat"><option value="">All</option></select></div>
+      <div class="field"><label>Supplier</label><select id="ff-sup"><option value="">All</option></select></div>
+    </div>
+    <button class="btn ghost" id="clearFilterBtn">Clear Filters</button>
+  </div>
+  <div class="card">
+    <h2>Material-wise Report</h2>
+    <div class="tbl-wrap"><table id="matTable"><thead><tr><th>Material</th><th>Total Qty</th><th>Total Amount</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>Supplier-wise Report</h2>
+    <div class="tbl-wrap"><table id="supTable"><thead><tr><th>Supplier</th><th>Purchases</th><th>Total Amount</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section id="export" style="display:none">
+  <div class="card">
+    <h2>Export Final Report</h2>
+    <p style="font-size:13px;color:var(--ink-soft)">
+      Exports respect the filters set in the Reports tab.
+    </p>
+    <div class="row">
+      <button class="btn" id="exportExcelBtn">⬇️ Export Excel</button>
+      <button class="btn rust" id="exportPdfBtn">⬇️ Export PDF</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Backup & Restore</h2>
+    <p style="font-size:13px;color:var(--ink-soft)">
+      Backup your purchase data to a file and restore it anytime.
+    </p>
+
+    <div class="row">
+      <button class="btn" id="backupBtn">💾 Backup Data</button>
+      <button class="btn ghost" id="restoreBtn">📂 Restore Data</button>
+      <input type="file" id="restoreInput" accept=".json" style="display:none">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Reset Data</h2>
+    <p style="font-size:13px;color:var(--ink-soft)">
+      Removes all stored entries from this device.
+    </p>
+    <button class="btn ghost" id="resetBtn">Clear All Data</button>
+  </div>
+</section>
+
+</main>
+<div class="toast" id="toast"></div>
+
+<script>
+const STORE_KEY='mpt_records_v1';
+let records = [];
+try{ records = JSON.parse(localStorage.getItem(STORE_KEY)||'[]'); }catch(e){ records=[]; }
+
+function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(records)); }catch(e){} }
+function toast(msg){ const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200); }
+function inr(n){ return 'Rs.'+Number(n||0).toLocaleString('en-IN',{maximumFractionDigits:2}); }
+
+// ---- Tabs ----
+document.querySelectorAll('nav button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    ['dash','entry','import','reports','export'].forEach(id=>{
+      document.getElementById(id).style.display = (id===b.dataset.tab)?'block':'none';
+    });
+    if(b.dataset.tab==='dash') renderDashboard();
+    if(b.dataset.tab==='entry') renderEntryTable();
+    if(b.dataset.tab==='reports') renderReports();
+  });
+});
+
+// theme toggle
+document.getElementById('themeBtn').addEventListener('click',()=>{
+  const r=document.documentElement;
+  const cur=r.getAttribute('data-theme');
+  r.setAttribute('data-theme', cur==='dark'?'light':'dark');
+});
+
+// ---- Entry form auto-calc ----
+const fQty=document.getElementById('f-qty'), fRate=document.getElementById('f-rate'), fAmt=document.getElementById('f-amt');
+function recalcForm(){ const q=parseFloat(fQty.value)||0, r=parseFloat(fRate.value)||0; fAmt.value = inr(q*r); }
+fQty.addEventListener('input',recalcForm); fRate.addEventListener('input',recalcForm);
+
+document.getElementById('addBtn').addEventListener('click',()=>{
+  const date=document.getElementById('f-date').value || new Date().toISOString().slice(0,10);
+  const code=document.getElementById('f-code').value.trim();
+  const name=document.getElementById('f-name').value.trim();
+  const sup=document.getElementById('f-sup').value.trim();
+  const inv=document.getElementById('f-inv').value.trim();
+  const unit=document.getElementById('f-unit').value.trim();
+  const qty=parseFloat(fQty.value)||0;
+  const rate=parseFloat(fRate.value)||0;
+  if(!name||!sup||!qty){ toast('Please fill Material Name, Supplier and Qty'); return; }
+  records.push({date,code,name,sup,inv,unit,qty,rate,amount:qty*rate});
+  save();
+  ['f-code','f-name','f-sup','f-inv','f-unit','f-qty','f-rate'].forEach(id=>document.getElementById(id).value='');
+  fAmt.value='';
+  renderEntryTable(); toast('Entry added ✓');
+});
+
+function renderEntryTable(){
+  const tbody=document.querySelector('#entryTable tbody');
+  document.getElementById('entryCount').textContent=records.length;
+  tbody.innerHTML = records.map((r,i)=>`<tr>
+    <td class="txt">${r.date||''}</td><td class="txt">${r.code||''}</td><td class="txt">${r.name}</td>
+    <td class="txt">${r.sup}</td><td class="txt">${r.inv||''}</td><td>${r.qty}</td><td class="txt">${r.unit||''}</td>
+    <td>${inr(r.rate)}</td><td>${inr(r.amount)}</td>
+    <td><button class="del" onclick="delRow(${i})">✕</button></td>
+  </tr>`).join('') || '<tr><td colspan="10" class="empty">No entries yet.</td></tr>';
+}
+function delRow(i){ records.splice(i,1); save(); renderEntryTable(); }
+
+// ---- Import Excel ----
+const dz=document.getElementById('dz'), fileInput=document.getElementById('fileInput');
+dz.addEventListener('click',()=>fileInput.click());
+fileInput.addEventListener('change',e=>{ if(e.target.files[0]) handleFile(e.target.files[0]); });
+dz.addEventListener('dragover',e=>{e.preventDefault(); dz.style.borderColor='var(--steel)';});
+dz.addEventListener('drop',e=>{e.preventDefault(); if(e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);});
+
+function handleFile(file){
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const wb=XLSX.read(e.target.result,{type:'binary',cellDates:true});
+      const ws=wb.Sheets[wb.SheetNames[0]];
+      const rows=XLSX.utils.sheet_to_json(ws,{defval:''});
+      let added=0;
+      rows.forEach(row=>{
+        const get=(...keys)=>{ for(const k of keys){ for(const rk in row){ if(rk.toLowerCase().replace(/[^a-z]/g,'')===k) return row[rk]; } } return ''; };
+        const name=get('materialname','material');
+        if(!name) return;
+        let date=get('date');
+        if(date instanceof Date) date=date.toISOString().slice(0,10);
+        const qty=parseFloat(get('qty','quantity'))||0;
+        const rate=parseFloat(get('rate'))||0;
+        let amount=parseFloat(get('amount'));
+        if(!amount) amount=qty*rate;
+        records.push({date:String(date||''),code:String(get('materialcode','code')||''),name:String(name),
+          sup:String(get('supplier')||''),inv:String(get('invoiceno','invoice')||''),unit:String(get('unit')||''),
+          qty,rate,amount});
+        added++;
+      });
+      save();
+      document.getElementById('importMsg').textContent = `Imported ${added} rows successfully ✓`;
+      toast(`${added} rows imported`);
+    }catch(err){ document.getElementById('importMsg').textContent='Could not read file. Please check the format.'; document.getElementById('importMsg').style.color='var(--rust)'; }
+  };
+  reader.readAsBinaryString(file);
+}
+
+document.getElementById('templateBtn').addEventListener('click',()=>{
+  const wb=XLSX.utils.book_new();
+  const data=[
+    ['Date','Material Code','Material Name','Supplier','Invoice No','Qty','Unit','Rate','Amount'],
+    ['2026-09-26','MAT001','Cement','ABC Traders','INV001',100,'Bag',450,''],
+    ['2026-09-26','MAT002','Steel','XYZ Suppliers','INV002',500,'Kg',65,''],
+  ];
+  const ws=XLSX.utils.aoa_to_sheet(data);
+  XLSX.utils.book_append_sheet(wb,ws,'Template');
+  XLSX.writeFile(wb,'Material_Purchase_Template.xlsx');
+});
+
+// ---- Filters / aggregation ----
+function getFiltered(){
+  const from=document.getElementById('ff-from')?.value;
+  const to=document.getElementById('ff-to')?.value;
+  const mat=document.getElementById('ff-mat')?.value;
+  const sup=document.getElementById('ff-sup')?.value;
+  return records.filter(r=>{
+    if(from && r.date && r.date<from) return false;
+    if(to && r.date && r.date>to) return false;
+    if(mat && r.name!==mat) return false;
+    if(sup && r.sup!==sup) return false;
+    return true;
+  });
+}
+function groupBy(arr,key){
+  const m={};
+  arr.forEach(r=>{ const k=r[key]||'—'; if(!m[k]) m[k]={qty:0,amount:0,count:0}; m[k].qty+=r.qty; m[k].amount+=r.amount; m[k].count++; });
+  return m;
+}
+function populateFilterOptions(){
+  const mats=[...new Set(records.map(r=>r.name))].sort();
+  const sups=[...new Set(records.map(r=>r.sup))].sort();
+  const selMat=document.getElementById('ff-mat'), selSup=document.getElementById('ff-sup');
+  const curMat=selMat.value, curSup=selSup.value;
+  selMat.innerHTML='<option value="">All</option>'+mats.map(m=>`<option ${m===curMat?'selected':''}>${m}</option>`).join('');
+  selSup.innerHTML='<option value="">All</option>'+sups.map(s=>`<option ${s===curSup?'selected':''}>${s}</option>`).join('');
+}
+['ff-from','ff-to','ff-mat','ff-sup'].forEach(id=>{
+  document.addEventListener('change',e=>{ if(e.target.id===id){ renderReports(); renderDashboard(); } });
+});
+document.getElementById('clearFilterBtn').addEventListener('click',()=>{
+  document.getElementById('ff-from').value=''; document.getElementById('ff-to').value='';
+  document.getElementById('ff-mat').value=''; document.getElementById('ff-sup').value='';
+  renderReports(); renderDashboard();
+});
+
+function renderDashboard(){
+  const data=getFiltered();
+  document.getElementById('k-count').textContent=data.length;
+  document.getElementById('k-mat').textContent=new Set(data.map(r=>r.name)).size;
+  document.getElementById('k-sup').textContent=new Set(data.map(r=>r.sup)).size;
+  document.getElementById('k-amt').textContent=inr(data.reduce((s,r)=>s+r.amount,0));
+
+  const renderBars=(el,groups,unitLabel)=>{
+    const entries=Object.entries(groups).sort((a,b)=>b[1].amount-a[1].amount);
+    if(!entries.length){ el.innerHTML='<div class="empty">No data yet.</div>'; return; }
+    const max=Math.max(...entries.map(e=>e[1].amount),1);
+    el.innerHTML=entries.map(([k,v])=>`<div class="bar-row">
+      <div class="bar-name" title="${k}">${k}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(v.amount/max*100).toFixed(1)}%"></div></div>
+      <div class="bar-val">${inr(v.amount)}</div>
+    </div>`).join('');
+  };
+  renderBars(document.getElementById('matBars'), groupBy(data,'name'));
+  renderBars(document.getElementById('supBars'), groupBy(data,'sup'));
+
+  const monthGroups={};
+  data.forEach(r=>{ const m=(r.date||'').slice(0,7)||'Unknown'; if(!monthGroups[m]) monthGroups[m]={qty:0,amount:0,count:0}; monthGroups[m].amount+=r.amount; monthGroups[m].count++; });
+  const monthEl=document.getElementById('monthBars');
+  const mEntries=Object.entries(monthGroups).sort((a,b)=>a[0].localeCompare(b[0]));
+  if(!mEntries.length){ monthEl.innerHTML='<div class="empty">No data yet.</div>'; }
+  else{
+    const max=Math.max(...mEntries.map(e=>e[1].amount),1);
+    monthEl.innerHTML=mEntries.map(([k,v])=>`<div class="bar-row">
+      <div class="bar-name">${k}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(v.amount/max*100).toFixed(1)}%"></div></div>
+      <div class="bar-val">${inr(v.amount)}</div>
+    </div>`).join('');
+  }
+}
+
+function renderReports(){
+  populateFilterOptions();
+  const data=getFiltered();
+  const matG=groupBy(data,'name'), supG=groupBy(data,'sup');
+  const matBody=document.querySelector('#matTable tbody');
+  matBody.innerHTML=Object.entries(matG).sort((a,b)=>b[1].amount-a[1].amount)
+    .map(([k,v])=>`<tr><td class="txt">${k}</td><td>${v.qty.toLocaleString('en-IN')}</td><td>${inr(v.amount)}</td></tr>`).join('')
+    || '<tr><td colspan="3" class="empty">No data.</td></tr>';
+  const supBody=document.querySelector('#supTable tbody');
+  supBody.innerHTML=Object.entries(supG).sort((a,b)=>b[1].amount-a[1].amount)
+    .map(([k,v])=>`<tr><td class="txt">${k}</td><td>${v.count}</td><td>${inr(v.amount)}</td></tr>`).join('')
+    || '<tr><td colspan="3" class="empty">No data.</td></tr>';
+}
+
+// ---- Export ----
+document.getElementById('exportExcelBtn').addEventListener('click',()=>{
+  const data=getFiltered();
+  if(!data.length){ toast('No data to export'); return; }
+  const wb=XLSX.utils.book_new();
+  const detail=[['Date','Material Code','Material Name','Supplier','Invoice No','Qty','Unit','Rate','Amount'],
+    ...data.map(r=>[r.date,r.code,r.name,r.sup,r.inv,r.qty,r.unit,r.rate,r.amount])];
+  XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(detail),'Purchase Detail');
+  const matG=groupBy(data,'name');
+  const matSheet=[['Material','Total Qty','Total Amount'],...Object.entries(matG).sort((a,b)=>b[1].amount-a[1].amount).map(([k,v])=>[k,v.qty,v.amount])];
+  XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(matSheet),'Material-wise');
+  const supG=groupBy(data,'sup');
+  const supSheet=[['Supplier','Purchases','Total Amount'],...Object.entries(supG).sort((a,b)=>b[1].amount-a[1].amount).map(([k,v])=>[k,v.count,v.amount])];
+  XLSX.utils.book_append_sheet(wb,XLSX.utils.aoa_to_sheet(supSheet),'Supplier-wise');
+  XLSX.writeFile(wb,'Material_Purchase_Report.xlsx');
+  toast('Excel exported ✓');
+});
+
+document.getElementById('exportPdfBtn').addEventListener('click',()=>{
+
+  const data = getFiltered();
+
+  if(!data.length){
+    toast('No data to export');
+    return;
+  }
+
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  // Currency format for PDF
+  function pdfRs(n){
+    return 'Rs.' + Number(n || 0).toLocaleString('en-IN', {
+      maximumFractionDigits: 2
+    });
+  }
+
+  doc.setFontSize(16);
+  doc.text('Material Purchase Report',14,16);
+
+  doc.setFontSize(10);
+  doc.text(
+    `Generated: ${new Date().toLocaleDateString('en-IN')}`,
+    14,
+    22
+  );
+
+  const total = data.reduce((s,r)=>s + Number(r.amount || 0),0);
+
+  doc.text(
+    `Total Purchases: ${data.length}   Total Amount: ${pdfRs(total)}`,
+    14,
+    28
+  );
+
+  doc.autoTable({
+    startY:34,
+
+    head:[
+      ['Date','Material','Supplier','Qty','Unit','Rate','Amount']
+    ],
+
+    body:data.map(r=>[
+      r.date,
+      r.name,
+      r.sup,
+      r.qty,
+      r.unit,
+      pdfRs(r.rate),
+      pdfRs(r.amount)
+    ]),
+
+    styles:{
+      fontSize:8
+    },
+
+    headStyles:{
+      fillColor:[44,74,94]
+    }
+  });
+
+  const matG = groupBy(data,'name');
+
+  let y = (doc.lastAutoTable?.finalY || 34) + 10;
+
+  doc.setFontSize(12);
+  doc.text('Material-wise Summary',14,y);
+
+  doc.autoTable({
+    startY:y+4,
+
+    head:[
+      ['Material','Total Qty','Total Amount']
+    ],
+
+    body:Object.entries(matG)
+      .sort((a,b)=>b[1].amount-a[1].amount)
+      .map(([k,v])=>[
+        k,
+        v.qty,
+        pdfRs(v.amount)
+      ]),
+
+    styles:{
+      fontSize:9
+    },
+
+    headStyles:{
+      fillColor:[191,106,31]
+    }
+  });
+
+  doc.save('Material_Purchase_Report.pdf');
+
+  toast('PDF exported ✓');
+
+});
+// ---- Backup & Restore ----
+
+document.getElementById('backupBtn').addEventListener('click',()=>{
+
+  if(!records.length){
+    toast('No data to backup');
+    return;
+  }
+
+  const backup = {
+    app: 'MaterialWise Purchase Tracker',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    records: records
+  };
+
+  const blob = new Blob(
+    [JSON.stringify(backup, null, 2)],
+    { type: 'application/json' }
+  );
+
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+
+  const date = new Date().toISOString().slice(0,10);
+  a.download = `MaterialWise_Backup_${date}.json`;
+
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  URL.revokeObjectURL(url);
+
+  toast('Backup downloaded ✓');
+});
+
+
+document.getElementById('restoreBtn').addEventListener('click',()=>{
+
+  document.getElementById('restoreInput').click();
+
+});
+
+
+document.getElementById('restoreInput').addEventListener('change',e=>{
+
+  const file = e.target.files[0];
+
+  if(!file) return;
+
+  const reader = new FileReader();
+
+  reader.onload = event => {
+
+    try{
+
+      const backup = JSON.parse(event.target.result);
+
+      if(!backup || !Array.isArray(backup.records)){
+        throw new Error('Invalid backup');
+      }
+
+      if(!confirm(
+        `Restore ${backup.records.length} purchase entries?\n\n` +
+        `Current data will be replaced by the backup data.`
+      )){
+        e.target.value = '';
+        return;
+      }
+
+      records = backup.records;
+
+      save();
+
+      renderEntryTable();
+      renderDashboard();
+      renderReports();
+
+      toast(`${records.length} entries restored ✓`);
+
+    }catch(err){
+
+      toast('Invalid backup file');
+
+    }
+
+    e.target.value = '';
+
+  };
+
+  reader.readAsText(file);
+
+});
+
+document.getElementById('resetBtn').addEventListener('click',()=>{
+  if(confirm('Delete all stored purchase data from this device?')){
+    records=[]; save(); renderEntryTable(); renderDashboard(); renderReports();
+    toast('All data cleared');
+  }
+});
+
+// init
+renderDashboard(); renderEntryTable();
+</script>
+
+<script>
+// PWA: enable "Add to Home Screen" / Install behavior
+if('serviceWorker' in navigator){
+  try{
+    const swCode = `self.addEventListener('install',e=>self.skipWaiting());
+self.addEventListener('activate',e=>self.clients.claim());
+self.addEventListener('fetch',e=>{});`;
+    const blob = new Blob([swCode], {type:'application/javascript'});
+    navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});
+  }catch(e){}
+}
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt',(e)=>{
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = document.createElement('button');
+  btn.textContent = '⬇️ Install App';
+  btn.className = 'theme-btn';
+  btn.style.marginLeft = '6px';
+  btn.addEventListener('click', async ()=>{
+    btn.remove();
+    if(deferredPrompt){ deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt=null; }
+  });
+  document.querySelector('.hd-inner').appendChild(btn);
+});
+</script>
+</body>
+</html>
